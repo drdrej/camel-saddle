@@ -1,3 +1,5 @@
+package com.touchableheroes.saddle;
+
 import org.apache.camel.Exchange;
 
 /**
