@@ -20,6 +20,18 @@ public class Exchanges {
     }
 
     public final Exchanges withHeader(
+            final Enum key,
+            final Object val
+    ) {
+        this.ex.getOut().setHeader(
+                key.name(),
+                val
+        );
+
+        return this;
+    }
+
+    public final Exchanges withHeader(
             final String name,
             final Object val
     ) {
