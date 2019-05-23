@@ -93,5 +93,9 @@ public class Exchanges {
         return this;
     }
 
+    public <R> R header(Enum key) {
+        return (R) this.ex.getIn().getHeader(key.name());
+    }
+
 }
 
